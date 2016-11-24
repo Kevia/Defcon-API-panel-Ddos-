@@ -1,0 +1,41 @@
+RewriteEngine on
+
+RewriteRule ^home$							"index.php"
+
+RewriteRule ^list_plugin$					"page.php?page=list_plugin"
+RewriteRule ^list_plugin/(.*)$				"page.php?page=list_plugin&stranica=$1"
+
+RewriteRule ^atack/(.*)$					"page.php?page=atack&id=$1"
+RewriteRule ^atack2$						"page.php?page=atack2"
+
+RewriteRule ^podrska$						"page.php?page=podrska"
+RewriteRule ^open_ticket$					"page.php?page=open_ticket"
+RewriteRule ^my_ticket$						"page.php?page=my_ticket"
+RewriteRule ^tiket/(.*)$					"page.php?page=tiket&id=$1"
+
+#image folder
+
+RewriteRule ^img/$                          "/error.php"
+
+#ostalo
+
+RewriteRule ^css/$                			"/error.php"
+RewriteRule ^js/$                			"/error.php"
+RewriteRule ^SQL/$                			"/error.php"
+RewriteRule ^fonts/$                		"/error.php"
+
+RewriteRule ^plugin_amxx/$                	"/error.php"
+
+RewriteRule ^connect_db.php$                "/error.php"
+
+#ERROR PAGES
+
+ErrorDocument 404 /error.php
+
+
+<Files 403.shtml>
+	order allow,deny
+	allow from all
+</Files>
+
+deny from 5.149.69.140
