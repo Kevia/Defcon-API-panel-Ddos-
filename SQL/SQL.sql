@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`userid`, `username`, `ime`, `prezime`, `password`, `email`, `register_time`, `datum`, `avatar`, `drzava`, `user_ip`, `rank`, `rank_status`, `last_activity`, `online`) VALUES
-(199, 'Kevia', 'Muhamed', 'Skoko', 'fe01ce2a7fbac8fafaed7c982a04e229', 'djmuki2000@gmail.com', '1442680855', '16.09.2016', '1473374707.png', 'ME', '37.122.160.7', 1, 'Developer', '1474105056', 0),
+(199, 'Kevia', 'Muhamed', 'Skoko', 'fe01ce2a7fbac8fafaed7c982a04e229', 'info@kevia.com', '1442680855', '16.09.2016', '1473374707.png', 'ME', '37.122.160.7', 1, 'Developer', '1474105056', 0),
 (203, 'Demo', 'Demo', 'Demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'test@test', '1448711892', '12.09.2016', '1473389442.png', 'RS', '::1', 0, 'Support', '1474107163', 0),
 (204, 'Demo2', 'Demo2', 'Demo2', 'fe01ce2a7fbac8fafaed7c982a04e229', 'test@test', '1448711892', '13.09.2016', '1473389442.png', 'RS', '::1', 0, 'Support', '1474063252', 0);
 
